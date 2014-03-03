@@ -1,0 +1,8 @@
+My shader header does:
+
+1.takes in the shader info from my main program
+2.creates memory for each shader one after another
+3.immediately after memory is allocated for each shader, the source code is compiled for each
+4.The program gets created and attaches the shaders to it
+5.The program gets linked to my testlab2.cpp program
+6.The program then gets installed as the current rendering state and turns the shaders into executable form
