@@ -5,13 +5,13 @@ int counter=0;//counter to increase how many vertices are going to be drawn at a
 GLuint vaoID, vboID[2];//vao and vbo names
 
 GLfloat vertexarray[]={0.5f,0.5f,0.0f,//vertice array
-			1.0f,0.0f,0.0f,
-                       0.5f,-0.5f,0.0f, 
+1.0f,0.0f,0.0f,
+                       0.5f,-0.5f,0.0f,
                        0.0f,-1.0f,0.0f,
-                       -0.5f,-0.5f,0.0f, 
+                       -0.5f,-0.5f,0.0f,
                         -1.0f,0.0f,0.0f,
                        -0.5f,0.5f,0.0f,
-                      	0.0f,1.0f,0.0f
+                       0.0f,1.0f,0.0f
                        };
                        
 GLfloat colorarray[]={1.0f,1.0f,0.0f,1.0f,//color array
@@ -22,14 +22,14 @@ GLfloat colorarray[]={1.0f,1.0f,0.0f,1.0f,//color array
                        0.0f,1.0f,0.5f,1.0f,
                        0.5f,0.5f,0.5f,1.0f,
                        1.0f,0.5f,1.0f,1.0f
-                       };                       
+                       };
 
 void init(){
 
   ShaderInfo shaders[]={
   { GL_VERTEX_SHADER , "vertexshader.glsl"} ,
   { GL_FRAGMENT_SHADER , "fragmentshader.glsl"},
-  { GL_NONE , NULL} 
+  { GL_NONE , NULL}
   };
 
   initShaders(shaders);
@@ -80,8 +80,8 @@ int main(int argc,char ** argv){
   
   glutInitContextVersion(4, 3);//specifies the version of opengl
   glutInitContextProfile(GLUT_CORE_PROFILE|GLUT_COMPATIBILITY_PROFILE);//specifies what profile your using
-	
-	init();
+
+init();
 
   //retruns what version of opengl and glsl your computer can use
   const GLubyte* version=glGetString(GL_SHADING_LANGUAGE_VERSION);
